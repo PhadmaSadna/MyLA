@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            tools:context=".NetworkInformation">
+
+    <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fff">
+
+        <TextView
+                android:id="@+id/txt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="Network Interface"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        <android.support.v7.widget.CardView
+                android:id="@+id/card_interface"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                app:cardCornerRadius="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/txt1"
+                app:layout_constraintTop_toBottomOf="@id/txt1">
+
+            <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                <TextView
+                        android:id="@+id/txt_name1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="16dp"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:text="Name          :"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                        android:id="@+id/names1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toEndOf="@id/txt_name1"
+                        app:layout_constraintTop_toTopOf="@id/txt_name1"
+                        tools:text="eth0" />
+
+                <TextView
+                        android:id="@+id/txt_address1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:text="Address      :"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toStartOf="@id/txt_name1"
+                        app:layout_constraintTop_toBottomOf="@id/txt_name1" />
+
+                <TextView
+                        android:id="@+id/address1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toEndOf="@id/txt_address1"
+                        app:layout_constraintTop_toTopOf="@id/txt_address1"
+                        tools:text="192.168.43.1" />
+
+                <TextView
+                        android:id="@+id/txt_name2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="24dp"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:text="Name          :"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/txt_address1" />
+
+                <TextView
+                        android:id="@+id/names2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toEndOf="@id/txt_name2"
+                        app:layout_constraintTop_toTopOf="@id/txt_name2"
+                        tools:text="eth1" />
+
+                <TextView
+                        android:id="@+id/txt_address2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="16dp"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:text="Address      :"
+                        android:textSize="14sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="@id/txt_name2"
+                        app:layout_constraintTop_toBottomOf="@id/txt_name2" />
+
+                <TextView
+                        android:id="@+id/address2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toEndOf="@id/txt_address2"
+                        app:layout_constraintTop_toTopOf="@id/txt_address2"
+                        tools:text="192.168.43.3" />
+            </android.support.constraint.ConstraintLayout>
+        </android.support.v7.widget.CardView>
+
+        <TextView
+                android:id="@+id/txt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="Network Traffic"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@id/card_interface"
+                app:layout_constraintTop_toBottomOf="@id/card_interface" />
+
+        <android.support.v7.widget.CardView
+                android:id="@+id/card1"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                app:cardCornerRadius="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/txt2"
+                app:layout_constraintTop_toBottomOf="@id/txt2">
+
+            <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="6dp">
+
+                <com.jjoe64.graphview.GraphView
+                        android:id="@+id/graph_network"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+            </android.support.constraint.ConstraintLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+                android:id="@+id/card_net_in"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="14dp"
+                app:cardCornerRadius="8dp"
+                app:layout_constraintEnd_toEndOf="@id/card1"
+                app:layout_constraintStart_toStartOf="@id/card1"
+                app:layout_constraintTop_toBottomOf="@id/card1">
+
+            <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="6dp">
+
+                <com.jjoe64.graphview.GraphView
+                        android:id="@+id/graph_net_in"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+            </android.support.constraint.ConstraintLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+                android:id="@+id/card_net_out"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/card_net_in"
+                app:layout_constraintStart_toStartOf="@id/card_net_in"
+                app:layout_constraintTop_toBottomOf="@id/card_net_in">
+
+            <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="6dp">
+
+                <com.jjoe64.graphview.GraphView
+                        android:id="@+id/graph_net_out"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+            </android.support.constraint.ConstraintLayout>
+        </android.support.v7.widget.CardView>
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>

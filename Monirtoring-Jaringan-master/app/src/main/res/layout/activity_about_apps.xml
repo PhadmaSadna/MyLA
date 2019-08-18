@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutApps">
+
+    <ImageView
+        android:id="@+id/img_logo_about"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="Sistem Monitoring Jaringan"
+        android:textColor="#000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@id/img_logo_about"
+        app:layout_constraintStart_toStartOf="@id/img_logo_about"
+        app:layout_constraintTop_toBottomOf="@id/img_logo_about" />
+
+    <TextView
+        android:id="@+id/txt_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="Aplikasi unt memantau traffic jaringan melalui router dengan perangkat android."
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@id/txt_title"
+        app:layout_constraintStart_toStartOf="@id/txt_title"
+        app:layout_constraintTop_toBottomOf="@id/txt_title" />
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="Aldrey &amp; Phadma. 2019"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@id/txt_content"
+        app:layout_constraintStart_toStartOf="@id/txt_content"
+        app:layout_constraintTop_toBottomOf="@id/txt_content" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.skripsi.monitorjaringan">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+            android:allowBackup="true"
+            android:icon="@drawable/logo"
+            android:label="@string/app_name"
+            android:roundIcon="@drawable/logo"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme"
+            tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".GraphEth10">
+        </activity>
+        <activity android:name=".GraphEth9">
+        </activity>
+        <activity android:name=".GraphEth7">
+        </activity>
+        <activity android:name=".GraphEth6">
+        </activity>
+        <activity android:name=".GraphEth5">
+        </activity>
+        <activity android:name=".Graphic">
+        </activity>
+        <activity android:name=".MyLogin">
+        </activity>
+        <activity
+                android:name=".AboutApps"
+                android:label="About"
+                android:parentActivityName=".MainActivity"/>
+        <activity
+                android:name=".ResourceDetail"
+                android:label="Resource Detail"
+                android:parentActivityName=".MainActivity"/>
+        <activity
+                android:name=".NetworkInformation"
+                android:label="Network Information"
+                android:parentActivityName=".MainActivity"/>
+        <activity
+                android:name=".ServerInformation"
+                android:label="Server Information"
+                android:parentActivityName=".MainActivity"/>
+        <activity
+                android:name=".SignUp"
+                android:label="Register"
+                android:parentActivityName=".Login"/>
+        <activity
+                android:name=".Login"
+                android:label="Login"/>
+        <activity
+                android:name=".MainActivity"
+                android:label="Main Menu"/>
+        <activity
+                android:name=".SplashScreen"
+                android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

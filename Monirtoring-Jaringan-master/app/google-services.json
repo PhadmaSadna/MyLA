@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "137867608241",
+    "firebase_url": "https://monitoring-la.firebaseio.com",
+    "project_id": "monitoring-la",
+    "storage_bucket": "monitoring-la.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:137867608241:android:521a70b3b0f435bb",
+        "android_client_info": {
+          "package_name": "com.skripsi.monitorjaringan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "137867608241-bf7qe6se20ghapnu6255r656t98upi54.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.skripsi.monitorjaringan",
+            "certificate_hash": "c773c6aa65d38847c69d4db656601a42ec3eeb64"
+          }
+        },
+        {
+          "client_id": "137867608241-eukbvj2vlgvflgunkdvt679somc2v3qv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB0e09mYYYI7TApQGwPqXyBiZuWEAfWN2s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "137867608241-eukbvj2vlgvflgunkdvt679somc2v3qv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

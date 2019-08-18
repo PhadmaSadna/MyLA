@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             tools:context=".ResourceDetail">
+
+    <TextView
+            android:id="@+id/txt_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="CPU Count"
+            android:fontFamily="@font/montserrat_semibold"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@id/guideline"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="16dp"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            app:layout_constraintTop_toTopOf="@id/txt_1"
+            app:layout_constraintStart_toStartOf="@id/guideline"/>
+
+    <TextView
+            android:id="@+id/cpu_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text=""
+            android:fontFamily="@font/montserrat_regular"
+            android:textSize="14sp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintStart_toEndOf="@id/txt_1"
+            app:layout_constraintTop_toTopOf="@id/txt_1"/>
+
+    <TextView
+            android:id="@+id/txt_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="CPU Frequency"
+            android:fontFamily="@font/montserrat_semibold"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@id/guideline"
+            app:layout_constraintStart_toStartOf="@id/txt_1"
+            app:layout_constraintTop_toBottomOf="@id/txt_1"
+            android:layout_marginTop="4dp"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            app:layout_constraintTop_toTopOf="@id/txt_2"
+            app:layout_constraintStart_toStartOf="@id/guideline"/>
+
+    <TextView
+            android:id="@+id/cpu_freq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@id/txt_2"
+            app:layout_constraintTop_toTopOf="@id/txt_2"/>
+
+    <TextView
+            android:id="@+id/txt_3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="CPU Load"
+            android:fontFamily="@font/montserrat_semibold"
+            android:textSize="14sp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintEnd_toEndOf="@id/guideline"
+            app:layout_constraintStart_toStartOf="@id/txt_2"
+            app:layout_constraintTop_toBottomOf="@id/txt_2"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            app:layout_constraintTop_toTopOf="@id/txt_3"
+            app:layout_constraintStart_toStartOf="@id/guideline"/>
+
+    <TextView
+            android:id="@+id/cpu_load"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:fontFamily="@font/montserrat_regular"
+            android:textSize="14sp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintStart_toEndOf="@id/txt_3"
+            app:layout_constraintTop_toTopOf="@id/txt_3"/>
+
+    <TextView
+            android:id="@+id/resource"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resource Detail"
+            android:fontFamily="@font/montserrat_semibold"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@id/txt_3"
+            app:layout_constraintTop_toBottomOf="@id/txt_3"
+            android:layout_marginTop="24dp"/>
+
+    <android.support.v7.widget.CardView
+            android:id="@+id/card_resource_detail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:cardCornerRadius="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/resource"
+            app:layout_constraintTop_toBottomOf="@id/resource"
+            android:layout_marginEnd="16dp">
+
+        <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <TextView
+                    android:id="@+id/txt_4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Type"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:textSize="14sp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="16dp"
+                    app:layout_constraintEnd_toStartOf="@id/guideline2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    app:layout_constraintTop_toTopOf="@id/txt_4"
+                    app:layout_constraintStart_toStartOf="@id/guideline2"/>
+
+            <TextView
+                    android:id="@+id/type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toEndOf="@id/txt_4"
+                    app:layout_constraintTop_toTopOf="@id/txt_4"
+                    android:layout_marginStart="8dp"/>
+
+            <TextView
+                    android:id="@+id/txt_5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Sys OS"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="@id/guideline2"
+                    app:layout_constraintStart_toStartOf="@id/txt_4"
+                    app:layout_constraintTop_toBottomOf="@id/txt_4"
+                    android:layout_marginTop="4dp"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    app:layout_constraintTop_toTopOf="@id/txt_5"
+                    app:layout_constraintStart_toStartOf="@id/guideline2"/>
+
+            <TextView
+                    android:id="@+id/sys_os"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Des/1/2018"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toEndOf="@id/txt_5"
+                    app:layout_constraintTop_toTopOf="@id/txt_5"
+                    android:layout_marginStart="8dp"/>
+
+            <TextView
+                    android:id="@+id/txt_6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Last Change"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="@id/guideline2"
+                    app:layout_constraintStart_toStartOf="@id/txt_5"
+                    app:layout_constraintTop_toBottomOf="@id/txt_5"
+                    android:layout_marginTop="4dp"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    app:layout_constraintTop_toTopOf="@id/txt_6"
+                    app:layout_constraintStart_toStartOf="@id/guideline2"/>
+
+            <TextView
+                    android:id="@+id/last_change"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toEndOf="@id/txt_6"
+                    app:layout_constraintTop_toTopOf="@id/txt_6"
+                    android:layout_marginStart="8dp"/>
+
+
+            <TextView
+                    android:id="@+id/txt_7"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Total HDD"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toStartOf="@id/guideline2"
+                    app:layout_constraintStart_toStartOf="@id/txt_6"
+                    app:layout_constraintTop_toBottomOf="@id/txt_6"
+                    android:layout_marginTop="4dp"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    app:layout_constraintTop_toTopOf="@id/txt_7"
+                    app:layout_constraintStart_toStartOf="@id/guideline2"/>
+
+            <TextView
+                    android:id="@+id/total_hdd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toEndOf="@id/txt_7"
+                    app:layout_constraintTop_toTopOf="@id/txt_7"
+                    android:layout_marginStart="8dp"/>
+
+            <TextView
+                    android:id="@+id/txt_8"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Used HDD"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="@id/guideline2"
+                    app:layout_constraintStart_toStartOf="@id/txt_7"
+                    app:layout_constraintTop_toBottomOf="@id/txt_7"
+                    android:layout_marginTop="4dp"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    app:layout_constraintTop_toTopOf="@id/txt_8"
+                    app:layout_constraintStart_toStartOf="@id/guideline2"/>
+
+            <TextView
+                    android:id="@+id/used_hdd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toEndOf="@id/txt_8"
+                    app:layout_constraintTop_toTopOf="@id/txt_8"
+                    android:layout_marginStart="8dp"/>
+
+            <android.support.constraint.Guideline
+                    android:id="@+id/guideline2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="160dp" />
+
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.constraint.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="178dp" />
+
+</android.support.constraint.ConstraintLayout>

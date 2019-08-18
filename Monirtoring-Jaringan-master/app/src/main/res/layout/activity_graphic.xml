@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            tools:context=".Graphic">
+
+    <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fff">
+
+        <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+            <com.alespero.expandablecardview.ExpandableCardView
+                    android:id="@+id/ether5"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:title="Ether5"
+                    app:inner_view="@layout/activity_graph_eth5"
+                    app:expandOnClick="true" />
+
+            <com.alespero.expandablecardview.ExpandableCardView
+                    android:id="@+id/ether6"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:title="Ether6"
+                    app:inner_view="@layout/activity_graph_eth6"
+                    app:expandOnClick="true"/>
+
+            <com.alespero.expandablecardview.ExpandableCardView
+                    android:id="@+id/ether7"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:title="Ether7"
+                    app:inner_view="@layout/activity_graph_eth7"
+                    app:expandOnClick="true"/>
+
+            <com.alespero.expandablecardview.ExpandableCardView
+                    android:id="@+id/ether9"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:title="Ether9"
+                    app:inner_view="@layout/activity_graph_eth9"
+                    app:expandOnClick="true"/>
+
+            <com.alespero.expandablecardview.ExpandableCardView
+                    android:id="@+id/ether10"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:title="Ether10"
+                    app:inner_view="@layout/activity_graph_eth10"
+                    app:expandOnClick="true"/>
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
