@@ -65,7 +65,7 @@
                     android:padding="6dp">
 
                 <com.jjoe64.graphview.GraphView
-                        android:id="@+id/graph_net_in"
+                        android:id="@+id/graph_net_in9"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent" />
 

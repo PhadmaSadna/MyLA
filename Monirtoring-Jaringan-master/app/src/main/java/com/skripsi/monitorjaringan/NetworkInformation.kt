@@ -100,7 +100,7 @@ class NetworkInformation : AppCompatActivity() {
             totalOut ++
 
             names2.text = data.child("descr").getValue().toString()
-            address2.text = data.child("mac").getValue().toString()
+            address2.text = data.child("ip").getValue().toString()
             progress.dismiss()
         }
     }

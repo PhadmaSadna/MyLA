@@ -8,7 +8,7 @@ import com.google.firebase.database.*
 import com.jjoe64.graphview.GraphView
 import com.jjoe64.graphview.series.DataPoint
 import com.jjoe64.graphview.series.LineGraphSeries
-import kotlinx.android.synthetic.main.activity_network_information.*
+import kotlinx.android.synthetic.main.activity_graph_eth5.*
 
 class GraphEth5 : AppCompatActivity() {
 
@@ -58,9 +58,9 @@ class GraphEth5 : AppCompatActivity() {
     private fun showData(dataSnapShot: DataSnapshot) {
 
         //graph interface
-        graphEth51 = findViewById(R.id.graph_network)
-        graphEth52 = findViewById(R.id.graph_net_in)
-        graphEth53 = findViewById(R.id.graph_net_out)
+        graphEth51 = findViewById(R.id.graph_eth51)
+        graphEth52 = findViewById(R.id.graph_net_in5)
+        graphEth53 = findViewById(R.id.graph_net_out5)
 
         val series: LineGraphSeries<DataPoint> = LineGraphSeries()
 
@@ -80,6 +80,9 @@ class GraphEth5 : AppCompatActivity() {
         graphEth53.viewport.setMaxX(total2X.toDouble())
 
         for (data in dataSnapShot.children) {
+
+            names5.text = data.child("descr5").getValue().toString()
+
             //set to graphic
             point = data.child("speed5").getValue().toString()
             point1 = data.child("netin5").getValue().toString()

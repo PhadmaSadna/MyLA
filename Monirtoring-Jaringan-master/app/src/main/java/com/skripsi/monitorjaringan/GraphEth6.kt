@@ -57,9 +57,9 @@ class GraphEth6 : AppCompatActivity() {
     private fun showData(dataSnapShot: DataSnapshot) {
 
         //graph interface
-        graphEth61 = findViewById(R.id.graph_network)
-        graphEth62 = findViewById(R.id.graph_net_in)
-        graphEth63 = findViewById(R.id.graph_net_out)
+        graphEth61 = findViewById(R.id.graph_eth61)
+        graphEth62 = findViewById(R.id.graph_net_in6)
+        graphEth63 = findViewById(R.id.graph_net_out6)
 
         val series: LineGraphSeries<DataPoint> = LineGraphSeries()
 

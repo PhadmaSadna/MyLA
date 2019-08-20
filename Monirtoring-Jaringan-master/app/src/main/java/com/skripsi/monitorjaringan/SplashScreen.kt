@@ -21,7 +21,7 @@ class SplashScreen : AppCompatActivity() {
 
     internal val mRunnable: Runnable = Runnable {
         if (!isFinishing) {
-            startActivity(Intent(this, MainActivity::class.java))
+            startActivity(Intent(this, MyLogin::class.java))
         }
     }
 
